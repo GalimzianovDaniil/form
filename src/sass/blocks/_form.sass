@@ -1,0 +1,46 @@
+
+.form
+    width: 481px
+    min-height: 392px
+    padding: 40px
+    display: flex
+    flex-flow: wrap column
+    justify-content: space-between
+    margin: auto
+    background: $bgColor
+    border-radius: 12px
+    box-shadow: 6px 6px 10px 6px rgba(0,0,0,0.15)
+    +regular
+
+    &__title
+        +bold
+        font-size: 24px
+        color: $titleColor 
+        letter-spacing: -0.5px
+
+    &__input
+        padding: 15px
+        font-size: 15px
+        box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.02)
+        border-radius: 6px
+
+        &::placeholder
+            color: $inputPlaceHolderColor
+
+        &:focus
+            outline: none
+            border: 1px solid #854FC8; 
+
+
+.wrong_data
+    width: 100%
+    position: relative
+    border: 1px solid red
+
+    &:after
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background: red

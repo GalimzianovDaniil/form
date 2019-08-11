@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <title>Form</title>
+<link href="assets/css/app.css" rel="stylesheet"></head>
+<body>
+    <form action="https://digital-spectr.com/ac/academy.php" method="post" class="form " id="form">
+        <h4 class="form__title">Задать вопрос</h4>
+        <!-- /.form__title -->
+        <input type="text" validationError="Имя может содержать только только русские буквы, пробелы, тире" id="name" name="name" class="form__input" placeholder="Фамилия, имя, отчество *" required>
+        <input type="text" validationError="Номер может содержать только цифры, “-”, пробелы, “+”" id="phone" name="phone" class="form__input" placeholder="Телефон *" required>
+        <input type="text" validationError="Только строки соответствующие формату email" id="email" name="email" class="form__input" placeholder="Email">
+        <button type="submit" class="form__button button">Отправить запрос</button>
+        <!-- /.form__button -->
+    </form>
+
+<script type="text/javascript" src="assets/js/app.js"></script></body>
+</html>
